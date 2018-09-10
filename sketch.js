@@ -4,7 +4,6 @@
  * (normalement un tracé de raccordement est à faire pour abaisser le creux en fonction du jeu)
  *
  * François Jarriges
- * Pôle Technologique - Lycée Jules Renard - Nevers
  *
  */
 
