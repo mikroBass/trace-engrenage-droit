@@ -52,3 +52,33 @@ Pour cela, on déduit de l'équation de base que pour la n-ième dent dont le pr
 où l'angle t entre OM(0) et OM(t) est exprimé en radians.
 
 ![Schéma de généralisation à N dents](img/SchemaConstructNDents.png)
+
+## Calcul du décalage angulaire entre les points de départ des 2 profils opposés d'une même dent
+
+Au cercle primitif (en vert), l'épaisseur de la dent est donnée par le pas primitif moins le jeu. Il reste à trouver l'angle entre le pied de la dent et le point du profil situé au cercle primitif. Il s'agit de l'angle entre l'horizontale et le rayon rouge tracé sur la capture d'écran ci-dessous. Plutôt que de le calculer, il est facile de l'obtenir par programmation, lors du tracé du premier profil de la première dent.
+
+C'est la valeur de l'angle entre le pied de la dent et le point (x, y) situé sur le cercle primitif :
+
+`x2 + y2 = (d_prim/2)2`( en vertu du théorème de Pythagore).
+
+Appelons cet angle teta. Il doit être mémorisé afin de pouvoir refaire la totalité des tracés pour les profils opposés.
+
+Comme on est sur la première dent :
+
+`teta = artan(y/x)`
+
+Deux choses changent par rapport aux tracés directs déjà effectués :
+
+- la valeur de départ de t, pour cette deuxième passe n'est plus 0 mais [2.teta + (pas_prim - JEU)/d_prim]
+
+- l'équation de la développante des profils opposés devient :
+
+`xn(t)=R_base.(cos (-t + 2.n.PI/Z) - t.sin (-t + 2.n.PI/Z))`
+
+`yn(t)=R_base.(sin (-t + 2.n.PI/Z) + t.cos (-t + 2.n.PI/Z))`
+
+en raison du changement de signe dans la progression de l'angle t (régression).
+
+![Capture d'écran](capture.jpeg)
+
+
