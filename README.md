@@ -37,5 +37,5 @@ Pour le cercle de base centré en l'origine et de rayon R_base, la développante
 
 où l'angle t entre OM(0) et OM(t) est exprimé en radians.
 
-[Schéma de principe du tracé de profil d'engrenage en développante de cercle](img/SchemaConstructProfilDent.png)
+![Schéma de principe du tracé de profil d'engrenage en développante de cercle](img/SchemaConstructProfilDent.png)
 
