@@ -79,6 +79,6 @@ Deux choses changent par rapport aux tracés directs déjà effectués :
 
 en raison du changement de signe dans la progression de l'angle t (régression).
 
-![Capture d'écran](capture.jpeg)
+![Capture d'écran](capture.jpg)
 
 
