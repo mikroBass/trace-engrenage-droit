@@ -39,3 +39,16 @@ où l'angle t entre OM(0) et OM(t) est exprimé en radians.
 
 ![Schéma de principe du tracé de profil d'engrenage en développante de cercle](img/SchemaConstructProfilDent.png)
 
+## Réitération du tracé élémentaire pour plusieurs dents
+
+Il s'agit d'appeler autant de fois la fonction de tracé qu'il y a de dents sur le quart de cercle affiché, en généralisant l'équation de développante de cercle à une dent quelconque.
+
+Pour cela, on déduit de l'équation de base que pour la n-ième dent dont le profil démarre donc à l'angle n( 2.PI / Z) sur le cercle de base, l'équation de la courbe est définie par :
+
+`xn(t)=R_base.(cos (t + 2.n.PI/Z) + t.sin (t + 2.n.PI/Z))`
+
+`yn(t)=R_base.(sin (t + 2.n.PI/Z) - t.cos (t + 2.n.PI/Z))`
+
+où l'angle t entre OM(0) et OM(t) est exprimé en radians.
+
+![Schéma de généralisation à N dents](img/SchemaConstructNDents.png)
