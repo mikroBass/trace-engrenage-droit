@@ -69,7 +69,7 @@ Comme on est sur la première dent :
 
 Deux choses changent par rapport aux tracés directs déjà effectués :
 
-- la valeur de départ de t, pour cette deuxième passe n'est plus 0 mais [2.teta + (pas_prim - JEU)/d_prim]
+- la valeur de départ de t, pour cette deuxième passe n'est plus 0 mais '[2.teta + (pas_prim - JEU)/d_prim]'
 
 - l'équation de la développante des profils opposés devient :
 
@@ -79,6 +79,6 @@ Deux choses changent par rapport aux tracés directs déjà effectués :
 
 en raison du changement de signe dans la progression de l'angle t (régression).
 
-![Capture d'écran](capture.jpg)
+![Capture d'écran](img/capture.jpg)
 
 
